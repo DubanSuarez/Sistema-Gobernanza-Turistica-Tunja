@@ -1,0 +1,238 @@
+/* ===== GENERAL ===== */
+body {
+    background-color: #f5f5f5;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding: 12px;
+}
+
+/* ===== MAIN CONTAINER ===== */
+
+/* ===== LEFT SIDE IMAGE ===== */
+.left-side {
+    background: url('../Img/ImgPlaza.jpg') center center no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Oscurecer imagen */
+.left-side::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+/* Contenido encima imagen */
+/* Contenedor sobre la imagen */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.50),
+    rgba(0, 0, 0, 0.50)
+  );
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between; /* 🔥 clave: separa arriba y abajo */
+  align-items: flex-start;
+
+  padding: 30px 30px;
+}
+
+/* Contenido */
+.hero-content {
+  max-width: 500px;
+  color: #ffffff;
+}
+
+/* Línea más sobria */
+.hero-content::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #BA9215;
+  margin-bottom: 16px;
+}
+
+
+/* Título */
+.hero-title {
+  font-family: 'Baloo Thambi 2', cursive;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.hero-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #d0d0d0;
+  margin-bottom: 10px;
+}
+
+.hero-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+
+
+.join-btn {
+    border: 1px solid white;
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+
+.profile {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start; /* 🔥 lo pega a la izquierda */
+}
+
+.profile img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+
+.btn-volver {
+  padding: 9px 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 8px;
+  color: #fff;
+  background: transparent;
+
+  transition: all 0.2s ease;
+}
+
+.btn-volver:hover {
+  background-color: rgba(255,255,255,0.9);
+  color: #000;
+  transform: none; /* 🔥 quitamos efecto “moderno” */
+}
+
+
+
+
+
+
+
+
+
+
+/* ===== RIGHT SIDE ===== */
+.right-side {
+    background-color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 380px;
+}
+
+.brand {
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.subtitle {
+    color: gray;
+    margin-bottom: 15px;
+}
+
+.form-control {
+    height: 50px;
+    border-radius: 10px;
+}
+
+.forgot {
+    font-size: 12px;
+    text-align: right;
+    margin-top: 5px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+.divider:not(:empty)::before {
+    margin-right: .75em;
+}
+
+.divider:not(:empty)::after {
+    margin-left: .75em;
+}
+
+.google-btn {
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background: white;
+}
+
+.login-btn {
+    height: 50px;
+    border-radius: 25px;
+    background-color: #990E0B;
+    border: none;
+    font-weight: 600;
+}
+
+.login-btn:hover {
+    background-color: #b60e0b;
+}
+
+.signup-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.social-icons i {
+    margin: 0 8px;
+    color: #555;
+    cursor: pointer;
+}

@@ -1,0 +1,437 @@
+@font-face {
+    font-family: 'Mifuente';
+    src: url(../Fuente/BalooThambi2-Medium.ttf);
+}
+
+body {
+    background: #f5f7fb;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.welcome-box {
+    background: linear-gradient(135deg, #A23123, #d94c3d);
+    color: white;
+    padding: 30px;
+    border-radius: 22px;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.stat-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.bg1 {
+    background: #A23123;
+}
+
+.bg2 {
+    background: #d94c3d;
+}
+
+.bg3 {
+    background: #7c2d12;
+}
+
+.bg4 {
+    background: #111827;
+}
+
+
+
+/* NAVBAR PRO */
+.navbar-pro {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    padding: 14px 0;
+}
+
+/* LOGO */
+.logo-icon {
+    width: 44px;
+    height: 38px;
+    background: linear-gradient(135deg, #A23123, #d94c3d);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+}
+
+.brand-text {
+    font-size: 18px;
+    color: #111827;
+}
+
+/* LINKS */
+.nav-link {
+    color: #374151;
+    font-weight: 500;
+    padding: 8px 14px !important;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    background: #f3f4f6;
+    color: #A23123;
+}
+
+.nav-link.active {
+    background: linear-gradient(135deg, #A23123, #d94c3d);
+    color: white !important;
+    box-shadow: 0 6px 18px rgba(162, 49, 35, 0.25);
+}
+
+/* BOTON SALIR */
+/* ===============================
+   BOTÓN CERRAR SESIÓN PRO
+================================ */
+
+.btn-logout {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    border: 1.5px solid #990E0B;
+    color: #990E0B;
+    background: white;
+    transition: all 0.25s ease;
+}
+
+.btn-logout i {
+    font-size: 14px;
+    transition: transform 0.25s ease;
+}
+
+/* Hover elegante */
+.btn-logout:hover {
+    background: #990E0B;
+    color: white;
+    box-shadow: 0 4px 15px rgba(153, 14, 11, 0.3);
+    transform: translateY(-2px);
+}
+
+.btn-logout:hover i {
+    transform: translateX(3px);
+}
+
+/* MOBILE ICON */
+.navbar-toggler i {
+    font-size: 22px;
+    color: #111;
+}
+
+
+
+
+
+/* ===== TABLA BOOTSTRAP SUAVE ===== */
+
+.tabla-soft th,
+.tabla-soft td {
+    border: none !important;
+}
+
+.tabla-soft tbody tr {
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.tabla-soft tbody tr:hover {
+    background: #f8f9fa;
+}
+
+.tabla-soft thead {
+    background: linear-gradient(135deg, #990E08, #F85F10);
+    color: white;
+}
+
+.tabla-soft td {
+    padding: 14px 10px;
+}
+
+
+
+
+
+
+
+
+
+/* ===== DataTables moderno ===== */
+
+/* buscador */
+.dataTables_filter input {
+    border-radius: 10px !important;
+    padding: 6px 10px !important;
+    border: 1px solid #ddd !important;
+}
+
+/* selector registros */
+.dataTables_length select {
+    border-radius: 10px !important;
+}
+
+/* info texto */
+.dataTables_info {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* paginación */
+.page-link {
+    border-radius: 8px !important;
+    margin: 0 2px;
+}
+
+.page-item.active .page-link {
+    background: #990E08;
+    border-color: #990E08;
+}
+
+
+
+
+
+
+/* ===============================
+   KPI CARDS – REFINADO PROFESIONAL
+================================ */
+
+.stat-card{
+background:#ffffff;
+padding:20px 22px;
+border-radius:16px;
+box-shadow:0 6px 18px rgba(0,0,0,0.06);
+display:flex;
+align-items:center;
+gap:18px;
+transition:all 0.25s ease;
+border-left:5px solid transparent;
+min-height:95px;
+}
+
+.stat-card:hover{
+transform:translateY(-4px);
+box-shadow:0 10px 24px rgba(0,0,0,0.10);
+}
+
+/* ICONO MÁS EQUILIBRADO */
+.stat-icon{
+width:48px;
+height:48px;
+border-radius:12px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:18px;
+}
+
+/* NÚMERO PROTAGONISTA */
+.stat-card h4,
+.stat-card h5{
+font-size:24px;
+font-weight:700;
+margin-bottom:2px;
+}
+
+/* TEXTO SECUNDARIO */
+.stat-card small{
+font-size:13px;
+color:#7a7a7a;
+}
+
+/* ===== COLORES MÁS NOTORIOS ===== */
+
+/* KPI 1 */
+.bg1{
+background:rgba(182,89,25,0.22);
+color:#B65919;
+}
+.col-md-3:nth-child(1) .stat-card{
+border-left:5px solid #B65919;
+}
+.col-md-3:nth-child(1) .stat-card h4{
+color:#B65919;
+}
+
+/* KPI 2 */
+.bg2{
+background:rgba(248,95,16,0.22);
+color:#F85F10;
+}
+.col-md-3:nth-child(2) .stat-card{
+border-left:5px solid #F85F10;
+}
+.col-md-3:nth-child(2) .stat-card h4{
+color:#F85F10;
+}
+
+/* KPI 3 */
+.bg3{
+background:rgba(186,146,21,0.25);
+color:#BA9215;
+}
+.col-md-3:nth-child(3) .stat-card{
+border-left:5px solid #BA9215;
+}
+.col-md-3:nth-child(3) .stat-card h5{
+color:#BA9215;
+}
+
+/* KPI 4 */
+.bg4{
+background:rgba(120,144,143,0.28);
+color:#78908F;
+}
+.col-md-3:nth-child(4) .stat-card{
+border-left:5px solid #78908F;
+}
+.col-md-3:nth-child(4) .stat-card h5{
+color:#78908F;
+}
+
+
+
+.section-card {
+    background: #ffffff;
+    border-radius: 16px;
+}
+
+.section-line {
+    width: 6px;
+    height: 28px;
+    background: #990E0B;
+    border-radius: 6px;
+}
+
+/* Base tarjeta */
+.report-box {
+    position: relative;
+    display: block;
+    background: #f8f9fa;
+    border-radius: 16px;
+    padding: 25px 25px 25px 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.25s ease;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Línea izquierda base */
+.report-box::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 6px;
+    border-radius: 16px 0 0 16px;
+    transition: all 0.25s ease;
+}
+
+/* Hover general */
+.report-box:hover {
+    background: #ffffff;
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* Icono */
+.report-icon {
+    font-size: 28px;
+    margin-bottom: 15px;
+    display: block;
+    transition: 0.25s;
+}
+
+/* ================= COLORES POR CATEGORÍA ================= */
+
+/* 🔴 Información */
+.cat-info::before { background: #990E0B; }
+.cat-info:hover::before { background: #B65919; }
+.cat-info:hover .report-icon { color: #990E0B; }
+
+/* 🟠 Económico */
+.cat-economico::before { background: #F85F10; }
+.cat-economico:hover::before { background: #F6990F; }
+.cat-economico:hover .report-icon { color: #F85F10; }
+
+/* 🟡 Cultura */
+.cat-cultura::before { background: #BA9215; }
+.cat-cultura:hover::before { background: #F6990F; }
+.cat-cultura:hover .report-icon { color: #BA9215; }
+
+/* 🔵 Promoción */
+.cat-promocion::before { background: #78908F; }
+.cat-promocion:hover::before { background: #5f7372; }
+.cat-promocion:hover .report-icon { color: #78908F; }
+
+/* 🔵 Destinos */
+.cat-destino::before { background: #000000; }
+.cat-destino:hover::before { background: #333333; }
+.cat-destino:hover .report-icon { color: #000000; }
+
+
+
+
+
+
+
+/*  Footer  */
+
+.footer-pro {
+    background: white;
+    margin-top: 80px;
+    padding: 35px 0;
+    border-top: 1px solid #eef1f6;
+    box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.04);
+}
+
+.brand-footer {
+    color: #111827;
+}
+
+.footer-links a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #6b7280;
+    font-size: 14px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.footer-links a:hover {
+    color: #A23123;
+}
+
+
+
+
+
+
+
